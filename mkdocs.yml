@@ -152,7 +152,7 @@ markdown_extensions:
 
 nav:
   - Land: land/index.html
-  - Home: home.md
+  - Home: land/index.html
   - E-book:
     - Gov Hub - plataforma livre de integração de dados e informações governamentais: getting-started.md
   - Sobre o Projeto:
