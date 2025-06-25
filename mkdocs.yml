@@ -180,6 +180,9 @@ nav:
     - Como gerar Dashboards: contributing/visualizar_dashboards.md
     - Melhores Praticas: contributing/praticas.md
     - Como implantar um Deploy: contributing/deploy.md
+  - Sistemas estruturantes:
+    - Requisitos de interoperabilidade: sistemas_estruturantes/requisitos_interoperabilidade.md
+
 
 extra_css:
   - assets/stylesheets/extra.css
