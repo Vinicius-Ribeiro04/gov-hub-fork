@@ -70,3 +70,46 @@ A pilha pode ser executada localmente via Docker Compose para validações inici
 
 Para maior detalhamento do processo de extração, transformação e carga de dados, consulte a seção **Integração de Dados**.
 
+
+## configuração da infraestrutura
+
+### servidores e ambiente
+
+- o projeto pode ser executado localmente com docker-compose ou em ambientes cloud.
+- estrutura recomendada:
+  -  servidor para orquestração (airflow + cosmos)
+  -  servidor para banco de dados (postgres)
+  -  servidor para bi (superset)
+
+### permissões e segurança
+
+- acesso ao banco de dados deve ser controlado com usuários distintos para leitura, escrita e administração.
+- airflow deve se conectar ao banco com usuário restrito (ex: `etl_user`).
+- superset deve se conectar com um usuário apenas-leitura.
+- recomenda-se a utilização de `.env` ou secrets manager para variáveis sensíveis.
+
+### conectores
+
+- airflow e dbt usam conexões configuráveis por URI.
+- exemplo de conexão airflow → postgres:
+
+postgres://etl_user:senha@host:5432/db
+
+- superset se conecta ao banco via SQLAlchemy URI configurada na interface web.
+
+---
+
+## escalabilidade
+
+o gov hub br foi desenhado para operar com grandes volumes de dados e pode escalar de forma horizontal e modular:
+
+- **airflow** pode ser executado com múltiplos workers em um ambiente Kubernetes ou Celery.
+- **dbt** suporta execução paralela e pode ser integrado com cloud warehouses altamente escaláveis.
+- **postgres** pode ser substituído por soluções como redshift, snowflake ou bigquery conforme a demanda.
+- dashboards em superset podem ser otimizados com caching e queries materializadas.
+
+---
+
+## considerações finais
+
+a arquitetura modular do gov hub br permite flexibilidade para evoluir conforme as necessidades dos órgãos públicos, mantendo uma base sólida de governança e performance.

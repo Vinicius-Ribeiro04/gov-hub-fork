@@ -1,10 +1,10 @@
-# Integração de Dados
+# Integração de Dados dos Sistemas Estruturantes
 
-Este documento detalha o pipeline de **ETL** implementado no Gov Hub BR, abrangendo desde a extração de dados via Apache Airflow até a transformação com DBT e a carga no PostgreSQL. O foco principal é a obtenção de dados das APIs governamentais, seu tratamento até a camada *Silver* e a organização no Data Warehouse.
+Este documento detalha como implementar a extração de dados e
 
 ---
 
-## 1. Extração de Dados com Apache Airflow
+## 1. Extração de Dados usando API
 
 ### 1.1. Configuração de Conexões e Variáveis
 
@@ -102,33 +102,4 @@ dag_instance = api_contratos_dag()
 - Implemente alertas para falhas críticas.
 - Documente endpoints e versões de API.
 
----
-
-## 2. Transformação e Modelagem com DBT
-
-### 2.1. Estrutura do Projeto
-
-
-### 2.2. Modelagem
-
-## 3. Carga e Organização no PostgreSQL
-
-### 3.1. Convenções de Schema e Tabelas
-
-
-### 3.2. Monitoramento
-
-- Configure alertas de consumo de espaço e performance.
-- Utilize métricas do PostgreSQL para identificar gargalos.
-
----
-
-## 4. Observações e Limitações
-
-- APIs que requerem certificado digital A1/A3 podem exigir configuração adicional em servidores Airflow.
-- Algumas fontes limitam a quantidade de requisições diárias.
-- A camada Gold depende de regras de negócio específicas e é disponibilizada como template.
-
----
-
-
+## 2. Extração de Sados usando e-mail
