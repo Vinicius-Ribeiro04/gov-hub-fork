@@ -152,7 +152,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - E-book:
-    - Gov Hub - plataforma livre de integração de dados e informações governamentais: getting-started.md
+    - Gov Hub - plataforma livre de integração de dados e informações governamentais: ebook.md
   - Sobre o Projeto:
     - Propósito e Objetivo Geral: sobre-projeto/proposito-objetivo.md
     - Sistemas Estruturantes: sobre-projeto/sistemas-estruturantes.md
@@ -182,8 +182,7 @@ nav:
         - Conexões: documentacao/tutoriais/superset/conexoes.md
         - Criando uma visualização: documentacao/tutoriais/superset/criando-chart.md
         - Criando um dashboard: documentacao/tutoriais/superset/criando-dashboard.md
-        - Tabelas virtuais: documentacao/tutoriais/superset/tabelas-virtuais.md
-        - Importando e exportando dashboards: documentacao/tutoriais/superset/importando-exportando-dashboards.md
+        - Importando e exportando dashboards: documentacao/tutoriais/superset/import-export.md
       - Sistemas estruturantes: 
         - DAG de ingestão: documentacao/tutoriais/sistemas-estruturantes/sistemas-estruturantes.md
         - Guia de sistemas: documentacao/tutoriais/sistemas-estruturantes/importar_bancos.md

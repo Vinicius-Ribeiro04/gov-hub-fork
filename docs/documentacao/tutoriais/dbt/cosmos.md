@@ -53,7 +53,14 @@ with DbtDag(
 
 ## Evitando conflito de logs
 
-**Cuidado**: Não remover as linhas abaixo do arquivo pois foram necessárias para evitar erros com logs.
+<style>
+  .md-typeset span[data-md-color-accent] {
+    background-color: transparent;
+    color: var(--md-accent-fg-color);
+  }
+</style>
+
+<span data-md-color-accent="red">**Cuidado**:</span> Não remover as linhas abaixo do arquivo pois foram necessárias para evitar erros com logs.
 
 ```python
 # Jobs sendo executados em paralelo podem conflitar ao enviar os logs

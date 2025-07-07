@@ -10,6 +10,8 @@ O objetivo desta página é apresentar as principais fontes que estamos utilizan
 
 Este guia apresenta o processo para importar dados de sistemas governamentais estruturantes, como o SIAFI, Compras Gov e TransfereGov, utilizando suas APIs públicas e respeitando boas práticas de segurança e integração.
 
+Foi feita uma refatoração dos clientes de API do antigo repositório para o novo e implementados a base dos clients REST e SOAP. A partir disso os demais clientes de ingestão foram desenvolvidos pela equipe do Lappis a partir do cliente base e dos exemplos. A biblioteca httpx (https://www.python-httpx.org/) foi escolhida por ser uma versão de cliente REST mais moderna e de fácil intercâmbio para uma possível versão assíncrona caso o projeto necessite no futuro. Buscou-se fazer uso extensivo de logging, exemplo que foi seguido na implementação das DAGs do Airflow de Ingestão pela equipe do Lappis. 
+
 ---
 
 ## Integração com o SIAFI (Sistema Integrado de Administração Financeira)
@@ -21,7 +23,7 @@ Este guia apresenta o processo para importar dados de sistemas governamentais es
 - [Manter programação — Catálogo de APIs governamentais](https://www.gov.br/conecta/catalogo/apis/manter-programacao)
 - [Módulo orçamentário — Catálogo de APIs governamentais](https://www.gov.br/conecta/catalogo/apis/siafi-2013-modulo-orcamentario)
 
-### Integração siafu
+## Integração siafi
 
 Antes de consumir as APIs do SIAFI, é necessário realizar a configuração de um ambiente seguro.
 
