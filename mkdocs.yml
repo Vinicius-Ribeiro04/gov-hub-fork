@@ -154,7 +154,7 @@ nav:
   - E-book:
     - Gov Hub - plataforma livre de integração de dados e informações governamentais: ebook.md
   - Sobre o Projeto:
-    - Propósito e Objetivo Geral: sobre-projeto/proposito-objetivo.md
+    - Visão geral: sobre-projeto/overview.md
     - Sistemas Estruturantes: sobre-projeto/sistemas-estruturantes.md
     - Gestão Orientada a Dados: sobre-projeto/gestao-dados.md
     - Replicação: sobre-projeto/replicacao.md
