@@ -13,16 +13,84 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    background: linear-gradient(90deg, #7A34F3 0%, #FF6B35 100%);
     color: white;
-    padding: 120px 2rem 80px;
+    padding: 120px 2rem 180px;
     text-align: center;
+    position: relative;
 }
 
 .hero-section h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    margin-right: 53rem;
+}
+
+/* Animated Circles */
+.animated-circles {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.circle-1 {
+    width: 480px;
+    height: 480px;
+    top: 20%;
+    left: 10%;
+    animation: float1 15s ease-in-out infinite;
+}
+
+.circle-2 {
+    width: 360px;
+    height: 360px;
+    top: 60%;
+    right: 20%;
+    animation: float2 20s ease-in-out infinite;
+}
+
+.circle-3 {
+    width: 300px;
+    height: 300px;
+    top: 40%;
+    left: 30%;
+    animation: float3 18s ease-in-out infinite;
+}
+
+@keyframes float1 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(200px, -100px) rotate(90deg); }
+    50% { transform: translate(400px, 0) rotate(180deg); }
+    75% { transform: translate(200px, 100px) rotate(270deg); }
+    100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+@keyframes float2 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(-150px, -80px) rotate(90deg); }
+    50% { transform: translate(-300px, 0) rotate(180deg); }
+    75% { transform: translate(-150px, 80px) rotate(270deg); }
+    100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+@keyframes float3 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(100px, -60px) rotate(90deg); }
+    50% { transform: translate(200px, 0) rotate(180deg); }
+    75% { transform: translate(100px, 60px) rotate(270deg); }
+    100% { transform: translate(0, 0) rotate(360deg); }
 }
 
 .hero-section p {
