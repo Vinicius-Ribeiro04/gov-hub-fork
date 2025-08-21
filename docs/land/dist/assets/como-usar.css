@@ -321,10 +321,43 @@ body {
     margin-bottom: 3rem;
 }
 
+/* Documentação Section */
+.documentacao-section {
+    width: 100%;
+    background-color: #F7F7F7;
+    padding: 6rem 2rem;
+}
+
+.documentacao-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.documentacao-content h2 {
+    color: #7A34F3;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.documentacao-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    text-align: left;
+    max-width: 800px;
+    margin-bottom: 3rem;
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .orgao-content h2,
-    .tutoriais-content h2 {
+    .tutoriais-content h2,
+    .funcionalidades-content h2,
+    .documentacao-content h2 {
         font-size: 2rem;
     }
     
@@ -333,17 +366,23 @@ body {
 
 @media (max-width: 768px) {
     .orgao-section,
-    .tutoriais-section {
+    .tutoriais-section,
+    .funcionalidades-section,
+    .documentacao-section {
         padding: 4rem 1rem;
     }
     
     .orgao-content h2,
-    .tutoriais-content h2 {
+    .tutoriais-content h2,
+    .funcionalidades-content h2,
+    .documentacao-content h2 {
         font-size: 1.8rem;
     }
     
     .orgao-content p,
-    .tutoriais-content p {
+    .tutoriais-content p,
+    .funcionalidades-content p,
+    .documentacao-content p {
         font-size: 1rem;
     }
     
@@ -385,12 +424,16 @@ body {
 
 @media (max-width: 480px) {
     .orgao-section,
-    .tutoriais-section {
+    .tutoriais-section,
+    .funcionalidades-section,
+    .documentacao-section {
         padding: 3rem 1rem;
     }
     
     .orgao-content h2,
-    .tutoriais-content h2 {
+    .tutoriais-content h2,
+    .funcionalidades-content h2,
+    .documentacao-content h2 {
         font-size: 1.6rem;
     }
     
@@ -448,6 +491,8 @@ body {
         padding: 1rem;
         font-size: 0.9rem;
     }
+    
+
     
 
 }
