@@ -57,7 +57,9 @@
     <link rel="stylesheet" crossorigin href="./assets/system-info-section.css">
     <link rel="stylesheet" crossorigin href="./assets/clientes-section.css">
     <link rel="stylesheet" crossorigin href="./assets/partners-section.css">
-    <link rel="stylesheet" crossorigin href="./assets/ebook-section.css">
+         <link rel="stylesheet" crossorigin href="./assets/ebook-section.css">
+     <link rel="stylesheet" crossorigin href="./assets/publicacoes-section.css">
+     <link rel="stylesheet" href="./assets/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -431,126 +433,110 @@
         </div>
       </div>
     </div>
-  </section>
-  <!-- End block - Seção Download E-book -->
-  <!-- Start block -->
-  <section class="bg-white dark:bg-gray-900">
-        <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
-            <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
-                <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Adote o GovHub e comece a contribuir agora mesmo</h2>
-                <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Implemente a plataforma em sua instituição e participe da comunidade open-source que fortalece a gestão pública orientada a dados.</p>
-                <a href="../../contributing/guia-contribuicao/" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Comece agora</a>
+     </section>
+   <!-- End block - Seção Download E-book -->
+   
+   <!-- Start block - Seção Publicações em destaque -->
+   <section class="publicacoes-section">
+     <div class="publicacoes-container">
+       <h2 class="publicacoes-title">Publicações em destaque</h2>
+       <p class="publicacoes-description">[Breve texto descritivo sobre o tema] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sem nisl, efficitur vitae magna vel, efficitur rhoncus urna. Aliquam efficitur iaculis ex, a mollis mi ornare a.</p>
+       
+       <div class="publicacoes-cards">
+         <div class="publicacao-card">
+           <div class="card-image">
+             <img src="./images/computador.png" alt="Publicação em destaque">
+             <span class="categoria categoria-roxa">CATEGORIA</span>
+           </div>
+           <div class="card-content">
+             <h3 class="card-title">Título da matéria ou nome da pessoa</h3>
+             <p class="card-description">Legenda da matéria de duas linhas no máximo para ser apenas introdutório</p>
+             <div class="card-arrow">
+               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                 <path d="M5 12h14m-7-7 7 7-7 7"/>
+               </svg>
+             </div>
+           </div>
+         </div>
+         
+         <div class="publicacao-card">
+           <div class="card-image">
+             <img src="./images/computador.png" alt="Publicação em destaque">
+             <span class="categoria categoria-roxa">CATEGORIA</span>
+           </div>
+           <div class="card-content">
+             <h3 class="card-title">Título da matéria ou nome da pessoa</h3>
+             <p class="card-description">Legenda da matéria de duas linhas no máximo para ser apenas introdutório</p>
+             <div class="card-arrow">
+               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                 <path d="M5 12h14m-7-7 7 7-7 7"/>
+               </svg>
+             </div>
+           </div>
+         </div>
+         
+         <div class="publicacao-card">
+           <div class="card-image">
+             <img src="./images/computador.png" alt="Publicação em destaque">
+             <span class="categoria categoria-laranja">CATEGORIA</span>
+           </div>
+           <div class="card-content">
+             <h3 class="card-title">Título da matéria ou nome da pessoa</h3>
+             <p class="card-description">Legenda da matéria de duas linhas no máximo para ser apenas introdutório</p>
+             <div class="card-arrow">
+               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                 <path d="M5 12h14m-7-7 7 7-7 7"/>
+               </svg>
+             </div>
+           </div>
+         </div>
+       </div>
+       
+       <button class="publicacoes-button">VEJA MAIS PUBLICAÇÕES</button>
+     </div>
+   </section>
+   <!-- End block - Seção Publicações em destaque -->
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h4>Home</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="./quem-somos.html">Quem somos</a></li>
+                    <li><a href="../../contributing/guia-contribuicao/">Guia de contribuição</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Como usar</h4>
+                <ul>
+                    <li><a href="../../setup/">Gov hub no meu Órgão</a></li>
+                    <li><a href="../../getting-started/">Tutoriais</a></li>
+                    <li><a href="../../docs/">Funcionalidades</a></li>
+                    <li><a href="../../home/">Documentação</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="mailto:contato@govhub.br">Email@email.com</a></li>
+                    <li>Rua Endereço, 1000 - Estado</li>
+                </ul>
             </div>
         </div>
-      </section>
-    <!-- End block -->
-    <footer class="bg-white dark:bg-gray-800">
-        <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
-            <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
-                <div>
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">PROJETO</h3>
-                    <ul class="text-gray-500 dark:text-gray-400">
-                        <li class="mb-4">
-                            <a href="../../home/" class=" hover:underline">Sobre o GovHub</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="../../home/" class="hover:underline">Equipe Lab Livre</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="../../home/" class="hover:underline">História do Projeto</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="../../home/" class="hover:underline">Blog</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="../../home/" class="hover:underline">Parceiros</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">AJUDA E SUPORTE</h3>
-                    <ul class="text-gray-500 dark:text-gray-400">
-                        <li class="mb-4">
-                            <a href="../../home/" class="hover:underline">Fale Conosco</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="../../home/" class="hover:underline">Central de Ajuda</a>
-                        </li>
-                        <li class="mb-4">
-                         <a href="../../home/" class="hover:underline">Documentação Técnica</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="../../home/" class="hover:underline">Suporte à Comunidade</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">APRENDIZADO</h3>
-                    <ul class="text-gray-500 dark:text-gray-400">
-                        <li class="mb-4">
-                            <a href="../../home/" class="hover:underline">Guias de Uso</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="../../home/" class="hover:underline">Tutoriais</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="../../home/" class="hover:underline">Comunidade</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">RECURSOS</h3>
-                    <ul class="text-gray-500 dark:text-gray-400">
-                        <li class="mb-4">
-                            <a href="../../home/" class=" hover:underline">Repositório no GitHub</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="../../home/" class="hover:underline">Modelos de Dashboards</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">LEGAL</h3>
-                    <ul class="text-gray-500 dark:text-gray-400">
-                        <li class="mb-4">
-                            <a href="../../home/" class="hover:underline">Política de Privacidade</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="../../home/" class="hover:underline">Licença de Software Livre</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="../../home/" class="hover:underline">Termos de Uso</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="./images/logo.png" alt="GovHub Logo">
+                <span>GovHub</span>
             </div>
-            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
-            <div class="text-center">
-                <a href="#topo" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">
-                    <img src="./images/logo.png" class="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
-                    GovHub    
+            <div class="footer-social">
+                <a href="https://www.instagram.com/lab.livre/" aria-label="Instagram">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8 2.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"/></svg>
                 </a>
-                <span class="block text-sm text-center text-gray-500 dark:text-gray-400">Plataforma livre mantida pelo Lab Livre/UnB</a>.
-                </span>
-                <ul class="flex justify-center mt-5 space-x-5">
-                    <!-- Instagram -->
-                    <li>
-                        <a href="https://www.instagram.com/lab.livre/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8 2.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"/>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <!-- GitHub -->
-                    <li>
-                        <a href="https://github.com/GovHub-br" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                <a href="https://github.com/GovHub-br" aria-label="GitHub">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                </a>
             </div>
         </div>
     </footer>
@@ -600,262 +586,6 @@
 </body>
 </html>
 
-                <div>
 
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">PROJETO</h3>
-
-                    <ul class="text-gray-500 dark:text-gray-400">
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class=" hover:underline">Sobre o GovHub</a>
-
-                        </li>
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class="hover:underline">Equipe Lab Livre</a>
-
-                        </li>
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class="hover:underline">História do Projeto</a>
-
-                        </li>
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class="hover:underline">Blog</a>
-
-                        </li>
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class="hover:underline">Parceiros</a>
-
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <div>
-
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">AJUDA E SUPORTE</h3>
-
-                    <ul class="text-gray-500 dark:text-gray-400">
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class="hover:underline">Fale Conosco</a>
-
-                        </li>
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class="hover:underline">Central de Ajuda</a>
-
-                        </li>
-
-                        <li class="mb-4">
-
-                         <a href="../../home/" class="hover:underline">Documentação Técnica</a>
-
-                        </li>
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class="hover:underline">Suporte à Comunidade</a>
-
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <div>
-
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">APRENDIZADO</h3>
-
-                    <ul class="text-gray-500 dark:text-gray-400">
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class="hover:underline">Guias de Uso</a>
-
-                        </li>
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class="hover:underline">Tutoriais</a>
-
-                        </li>
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class="hover:underline">Comunidade</a>
-
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <div>
-
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">RECURSOS</h3>
-
-                    <ul class="text-gray-500 dark:text-gray-400">
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class=" hover:underline">Repositório no GitHub</a>
-
-                        </li>
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class="hover:underline">Modelos de Dashboards</a>
-
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <div>
-
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">LEGAL</h3>
-
-                    <ul class="text-gray-500 dark:text-gray-400">
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class="hover:underline">Política de Privacidade</a>
-
-                        </li>
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class="hover:underline">Licença de Software Livre</a>
-
-                        </li>
-
-                        <li class="mb-4">
-
-                            <a href="../../home/" class="hover:underline">Termos de Uso</a>
-
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
-
-            <div class="text-center">
-
-                <a href="#topo" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">
-
-                    <img src="./images/logo.png" class="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
-
-                    GovHub    
-
-                </a>
-
-                <span class="block text-sm text-center text-gray-500 dark:text-gray-400">Plataforma livre mantida pelo Lab Livre/UnB</a>.
-
-                </span>
-
-                <ul class="flex justify-center mt-5 space-x-5">
-
-                    <!-- Instagram -->
-
-                    <li>
-
-                        <a href="https://www.instagram.com/lab.livre/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
-
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-
-                                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8 2.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"/>
-
-                            </svg>
-
-                        </a>
-
-                    </li>
-
-
-
-                    <!-- GitHub -->
-
-                    <li>
-
-                        <a href="https://github.com/GovHub-br" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
-
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-
-                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
-
-                            </svg>
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </footer>
-
-    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
-
-    
-    <!-- JavaScript para menu mobile -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            mobileMenuToggle.addEventListener('click', function() {
-                mobileMenu.classList.toggle('active');
-            });
-            
-            // Fechar menu ao clicar em um link
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    mobileMenu.classList.remove('active');
-                });
-            });
-        });
-    </script>
-    
-    <!-- JavaScript para seção interativa -->
-    <script>
-        function showImage(imageNumber) {
-            // Esconde todas as imagens
-            for (let i = 1; i <= 5; i++) {
-                const img = document.getElementById(`image-${i}`);
-                if (i === imageNumber) {
-                    img.classList.remove('image-fade-out');
-                    img.classList.add('image-fade-in');
-                } else {
-                    img.classList.remove('image-fade-in');
-                    img.classList.add('image-fade-out');
-                }
-            }
-        }
-    </script>
-    
-</body>
-
-</html>
 
 

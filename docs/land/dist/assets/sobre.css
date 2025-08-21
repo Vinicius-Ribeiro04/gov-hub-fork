@@ -236,18 +236,7 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-}
 
-footer p {
-    margin: 0;
-    font-size: 1rem;
-}
 
 /* Technologies Section */
 .technologies-section {
