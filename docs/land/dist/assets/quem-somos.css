@@ -1,0 +1,73 @@
+/* ===================================
+   PÁGINA QUEM SOMOS - GOVHUB
+   =================================== */
+
+/* Estilos base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Overview Section */
+.overview-section {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 8rem 2rem;
+}
+
+.overview-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.overview-content h2 {
+    color: #7A34F3;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.overview-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.overview-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .overview-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .overview-section {
+        padding: 6rem 1rem;
+    }
+    
+    .overview-content h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .overview-section {
+        padding: 4rem 1rem;
+    }
+    
+    .overview-content h2 {
+        font-size: 1.6rem;
+    }
+}
