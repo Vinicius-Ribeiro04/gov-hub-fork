@@ -37,6 +37,7 @@
     width: 320px;
     height: auto;
     transform: rotate(-15deg) translateX(-120px) translateY(-70px);
+    transform: rotate(5deg) translateX(-120px) translateY(-20px);
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
     transition: transform 0.3s ease;
     z-index: 1;
@@ -54,6 +55,7 @@
 
 .ebook-book-left:hover {
     transform: rotate(-25deg) translateX(-120px) translateY(-70px) scale(1.05);
+    transform: rotate(-5deg) translateX(-120px) translateY(-20px) scale(1.05);
 }
 
 .ebook-book-right:hover {
