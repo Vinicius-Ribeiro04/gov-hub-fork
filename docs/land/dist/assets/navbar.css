@@ -43,7 +43,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-    margin-left: -1rem;
+    margin-left: -10rem;
     height: 60px;
     padding-left: 0;
 }
@@ -62,7 +62,7 @@
 /* Navigation Links */
 .navbar-center {
     display: flex;
-    gap: 2rem;
+    gap: 0.5rem;
     align-items: center;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .nav-link:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: #F19F42;
     transform: translateY(-2px);
 }
 
