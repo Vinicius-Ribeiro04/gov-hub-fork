@@ -8,6 +8,7 @@
     <link rel="stylesheet" crossorigin href="./assets/banner.css">
     <link rel="stylesheet" crossorigin href="./assets/como-usar.css">
     <link rel="stylesheet" crossorigin href="./assets/footer.css">
+    <script src="./assets/main.js"></script>
 </head>
 <body>
     <div id="topo"></div>
@@ -29,7 +30,7 @@
                      <a href="./sobre.html" class="nav-link">SOBRE</a>
                      <a href="./quem-somos.html" class="nav-link">QUEM SOMOS</a>
                      <a href="./como-usar.html" class="nav-link">COMO USAR</a>
-                     <a href="#publicacoes" class="nav-link">PUBLICAÇÕES</a>
+                     <a href="./publicacoes.html" class="nav-link">PUBLICAÇÕES</a>
                      <a href="#guia-contribuicao" class="nav-link">GUIA DE CONTRIBUIÇÃO</a>
                  </div>
                 
@@ -65,7 +66,7 @@
                          <li><a href="./sobre.html">SOBRE</a></li>
                          <li><a href="./quem-somos.html">QUEM SOMOS</a></li>
                          <li><a href="./como-usar.html">COMO USAR</a></li>
-                         <li><a href="#publicacoes">PUBLICAÇÕES</a></li>
+                         <li><a href="./publicacoes.html">PUBLICAÇÕES</a></li>
                          <li><a href="#guia-contribuicao">GUIA DE CONTRIBUIÇÃO</a></li>
                      </ul>
                  </div>
@@ -284,11 +285,11 @@
     <footer class="footer">
         <div class="footer-container">
             <div>
-                <h4>Home</h4>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./sobre.html">Sobre</a></li>
                     <li><a href="./quem-somos.html">Quem somos</a></li>
+                    <li><a href="./publicacoes.html">Publicações</a></li>
                     <li><a href="../../contributing/guia-contribuicao/">Guia de contribuição</a></li>
                 </ul>
             </div>
@@ -325,58 +326,9 @@
         </div>
     </footer>
 
-    <!-- JavaScript para menu mobile e pesquisa -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            mobileMenuToggle.addEventListener('click', function() {
-                mobileMenu.classList.toggle('active');
-            });
-            
-            // Fechar menu ao clicar em um link
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    mobileMenu.classList.remove('active');
-                });
-            });
-            
-            // Funcionalidade da caixa de pesquisa
-            const pesquisaBtn = document.getElementById('pesquisa-btn');
-            const pesquisaInputContainer = document.getElementById('pesquisa-input-container');
-            const pesquisaInput = document.getElementById('pesquisa-input');
-            const fecharPesquisaBtn = document.getElementById('fechar-pesquisa-btn');
-            
-            // Abrir caixa de pesquisa
-            pesquisaBtn.addEventListener('click', function() {
-                pesquisaInputContainer.classList.add('active');
-                pesquisaInput.focus();
-            });
-            
-            // Fechar caixa de pesquisa
-            fecharPesquisaBtn.addEventListener('click', function() {
-                pesquisaInputContainer.classList.remove('active');
-                pesquisaInput.value = '';
-            });
-            
-            // Fechar ao pressionar ESC
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && pesquisaInputContainer.classList.contains('active')) {
-                    pesquisaInputContainer.classList.remove('active');
-                    pesquisaInput.value = '';
-                }
-            });
-            
-            // Fechar ao clicar fora da caixa
-            document.addEventListener('click', function(e) {
-                if (!pesquisaInputContainer.contains(e.target) && !pesquisaBtn.contains(e.target)) {
-                    pesquisaInputContainer.classList.remove('active');
-                    pesquisaInput.value = '';
-                }
-            });
-        });
-    </script>
+    <!-- JavaScript para funcionalidades da página -->
+    <script src="./assets/como-usar.js"></script>
 </body>
 </html>
+
+

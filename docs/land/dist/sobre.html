@@ -8,6 +8,7 @@
     <link rel="stylesheet" crossorigin href="./assets/banner.css">
     <link rel="stylesheet" crossorigin href="./assets/sobre.css">
     <link rel="stylesheet" crossorigin href="./assets/footer.css">
+    <script src="./assets/main.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -28,7 +29,7 @@
                     <a href="./sobre.html" class="nav-link">SOBRE</a>
                     <a href="./quem-somos.html" class="nav-link">QUEM SOMOS</a>
                     <a href="./como-usar.html" class="nav-link">COMO USAR</a>
-                    <a href="#publicacoes" class="nav-link">PUBLICAÇÕES</a>
+                    <a href="./publicacoes.html" class="nav-link">PUBLICAÇÕES</a>
                     <a href="#guia-contribuicao" class="nav-link">GUIA DE CONTRIBUIÇÃO</a>
                 </div>
 
@@ -64,7 +65,7 @@
                         <li><a href="./sobre.html">SOBRE</a></li>
                         <li><a href="./quem-somos.html">QUEM SOMOS</a></li>
                         <li><a href="./como-usar.html">COMO USAR</a></li>
-                        <li><a href="#publicacoes">PUBLICAÇÕES</a></li>
+                        <li><a href="./publicacoes.html">PUBLICAÇÕES</a></li>
                         <li><a href="#guia-contribuicao">GUIA DE CONTRIBUIÇÃO</a></li>
                     </ul>
                 </div>
@@ -250,11 +251,11 @@
     <footer class="footer">
         <div class="footer-container">
             <div>
-                <h4>Home</h4>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./sobre.html">Sobre</a></li>
                     <li><a href="./quem-somos.html">Quem somos</a></li>
+                    <li><a href="./publicacoes.html">Publicações</a></li>
                     <li><a href="../../contributing/guia-contribuicao/">Guia de contribuição</a></li>
                 </ul>
             </div>
@@ -290,25 +291,5 @@
             </div>
         </div>
     </footer>
-
-    <!-- JavaScript para menu mobile -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            mobileMenuToggle.addEventListener('click', function() {
-                mobileMenu.classList.toggle('active');
-            });
-            
-            // Fechar menu ao clicar em um link
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    mobileMenu.classList.remove('active');
-                });
-            });
-        });
-    </script>
 </body>
 </html>

@@ -34,19 +34,48 @@ function initMobileMenu() {
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     
-    if (mobileMenuToggle && mobileMenu) {
-        mobileMenuToggle.addEventListener('click', function() {
-            mobileMenu.classList.toggle('active');
-        });
-        
-        // Fechar menu ao clicar em um link
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                mobileMenu.classList.remove('active');
-            });
-        });
+    // Verificar se os elementos existem
+    if (!mobileMenuToggle || !mobileMenu) {
+        console.warn('Elementos do menu mobile não encontrados');
+        return;
     }
+    
+    // Toggle do menu mobile
+    mobileMenuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('active');
+        
+        // Adicionar/remover classe no body para prevenir scroll
+        if (mobileMenu.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    });
+    
+    // Fechar menu ao clicar em um link
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+    
+    // Fechar menu ao clicar fora dele
+    document.addEventListener('click', function(event) {
+        if (!mobileMenuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+    
+    // Fechar menu ao redimensionar a tela (se voltar para desktop)
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
 }
 
 // Função para scroll suave nos links de navegação

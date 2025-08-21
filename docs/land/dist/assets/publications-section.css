@@ -1,44 +1,44 @@
-/* Seção Publicações em Destaque */
+/* Seção de publicações em Destaque */
 
 .publications-section {
     background-color: #f8f9fa;
     padding: 4rem 0;
-    position: relative;
+    font-family: 'Inter', sans-serif;
 }
 
 .publications-container {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
-    position: relative;
-    z-index: 1;
-    width: 100%;
+    padding: 0 2rem;
 }
 
-/* Título e descrição */
+/* Header da seção */
+.publications-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 .publications-title {
-    color: #7c3aed;
     font-size: 2.5rem;
-    font-weight: 800;
-    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #9249CA;
     margin-bottom: 1rem;
     text-align: left;
 }
 
 .publications-description {
-    color: #6b7280;
-    font-size: 1.125rem;
+    font-size: 1.1rem;
+    color: #333;
     line-height: 1.6;
-    margin-bottom: 3rem;
+    max-width: 600px;
+    margin: 0;
     text-align: left;
-    font-family: 'Inter', sans-serif;
-    max-width: 800px;
 }
 
-/* Container dos cards */
+/* Grid de cards */
 .publications-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
 }
@@ -46,7 +46,7 @@
 /* Card individual */
 .publication-card {
     background: white;
-    border-radius: 1rem;
+    border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -55,36 +55,40 @@
 
 .publication-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Área da imagem */
-.publication-image {
+/* Container da imagem */
+.publication-image-container {
     position: relative;
     height: 200px;
     overflow: hidden;
 }
 
-.card-image {
+.publication-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-/* Categoria */
+.publication-card:hover .publication-image {
+    transform: scale(1.05);
+}
+
+/* Label da categoria */
 .publication-category {
     position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    background: #7c3aed;
+    bottom: 12px;
+    left: 12px;
+    background: #9249CA;
     color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    padding: 4px 12px;
+    border-radius: 20px;
     font-size: 0.6rem;
     font-weight: 600;
-    font-family: 'Inter', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.5px;
 }
 
 /* Conteúdo do card */
@@ -94,30 +98,28 @@
 }
 
 .publication-title {
-    color: #1f2937;
     font-size: 1.25rem;
-    font-weight: 700;
-    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #9249CA;
     margin-bottom: 0.75rem;
     line-height: 1.3;
 }
 
 .publication-caption {
-    color: #6b7280;
-    font-size: 0.875rem;
+    font-size: 0.95rem;
+    color: #666;
     line-height: 1.5;
-    font-family: 'Inter', sans-serif;
     margin-bottom: 1rem;
 }
 
-/* Seta do card */
+/* Seta indicativa */
 .publication-arrow {
     position: absolute;
     bottom: 1.5rem;
     right: 1.5rem;
-    color: #1f2937;
-    font-size: 1.25rem;
-    font-weight: 600;
+    color: #9249CA;
+    font-size: 1.2rem;
+    font-weight: bold;
     transition: transform 0.3s ease;
 }
 
@@ -131,57 +133,46 @@
 }
 
 .publications-button {
-    background: #7c3aed;
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 0.75rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    font-family: 'Inter', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
     display: inline-block;
-    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+    background: #9249CA;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    cursor: pointer;
 }
 
 .publications-button:hover {
-    background: #6d28d9;
+    background: #7c3aad;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
-}
-
-.publications-button:active {
-    transform: translateY(0);
+    color: white;
+    text-decoration: none;
 }
 
 /* Responsividade */
-@media (max-width: 1024px) {
-    .publications-cards {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+@media (max-width: 768px) {
+    .publications-section {
+        padding: 3rem 0;
+    }
+    
+    .publications-container {
+        padding: 0 1rem;
     }
     
     .publications-title {
         font-size: 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .publications-section {
-        padding: 2rem 0;
-    }
-    
-    .publications-title {
-        font-size: 1.75rem;
+        text-align: center;
     }
     
     .publications-description {
+        text-align: center;
         font-size: 1rem;
-        margin-bottom: 2rem;
     }
     
     .publications-cards {
@@ -189,12 +180,31 @@
         gap: 1.5rem;
     }
     
-    .publication-image {
-        height: 180px;
+    .publication-card {
+        max-width: 400px;
+        margin: 0 auto;
     }
     
     .publications-button {
         padding: 0.875rem 1.5rem;
-        font-size: 0.875rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .publications-title {
+        font-size: 1.75rem;
+    }
+    
+    .publication-content {
+        padding: 1.25rem;
+    }
+    
+    .publication-title {
+        font-size: 1.1rem;
+    }
+    
+    .publication-caption {
+        font-size: 0.9rem;
     }
 }
