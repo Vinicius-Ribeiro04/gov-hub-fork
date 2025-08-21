@@ -261,6 +261,136 @@ footer p {
     font-size: 1rem;
 }
 
+/* Technologies Section */
+.technologies-section {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 4rem 2rem;
+}
+
+.technologies-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 5rem auto;
+}
+
+.technologies-column h2,
+.requirements-column h2 {
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.technologies-column p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    text-align: justify;
+    margin: 0;
+}
+
+.requirements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.requirement-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.requirement-category {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.requirement-tech {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tech-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #7A34F3;
+    text-transform: uppercase;
+}
+
+.arrow {
+    color: #7A34F3;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Requirements Section */
+.requirements-section {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 4rem 2rem;
+}
+
+.requirements-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 5rem auto;
+}
+
+.minimum-requirements-column h2,
+.requirements-list-column h2 {
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.minimum-requirements-column p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    text-align: justify;
+    margin: 0;
+}
+
+.requirements-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.requirement-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.requirement-block h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #7A34F3;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.requirement-block p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .hero-section h1 {
@@ -272,6 +402,14 @@ footer p {
     }
     
     .content-grid {
+        gap: 3rem;
+    }
+    
+    .technologies-grid {
+        gap: 3rem;
+    }
+    
+    .requirements-grid {
         gap: 3rem;
     }
     
@@ -303,6 +441,16 @@ footer p {
     }
     
     .content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .technologies-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .requirements-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
@@ -347,6 +495,14 @@ footer p {
     }
     
     .content-grid {
+        gap: 1.5rem;
+    }
+    
+    .technologies-grid {
+        gap: 1.5rem;
+    }
+    
+    .requirements-grid {
         gap: 1.5rem;
     }
     
