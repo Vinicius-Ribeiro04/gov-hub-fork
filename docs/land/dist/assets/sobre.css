@@ -391,6 +391,140 @@ footer p {
     margin: 0;
 }
 
+/* Construction Section */
+.construction-section {
+    width: 100%;
+    background-color: #F7F7F7;
+    padding: 4rem 2rem;
+}
+
+.construction-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.construction-content h2 {
+    color: #7A34F3;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.construction-content h2:first-child {
+    margin-top: 0;
+}
+
+.construction-content h2:nth-child(3) {
+    margin-top: 15rem;
+}
+
+.construction-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.construction-content h3 {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+}
+
+.details-list li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.details-list li:before {
+    content: "•";
+    color: #7A34F3;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.download-link {
+    display: inline-block;
+    color: #7A34F3;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: color 0.3s ease;
+}
+
+.download-link:hover {
+    color: #5a2bc7;
+}
+
+/* Data Management Section */
+.data-management-section {
+    width: 100%;
+    background-color: #F7F7F7;
+    padding: 4rem 2rem;
+}
+
+.data-management-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.data-management-content h2 {
+    color: #7A34F3;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 7.5rem;
+    text-align: left;
+}
+
+.data-management-content h3 {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    text-align: left;
+}
+
+.data-management-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.download-link-blue {
+    display: inline-block;
+    color: #7A34F3;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: color 0.3s ease;
+}
+
+.download-link-blue:hover {
+    color: #5a2bc7;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .hero-section h1 {
@@ -411,6 +545,14 @@ footer p {
     
     .requirements-grid {
         gap: 3rem;
+    }
+    
+    .construction-content h2 {
+        font-size: 2rem;
+    }
+    
+    .data-management-content h2 {
+        font-size: 2rem;
     }
     
     .features-grid {
@@ -453,6 +595,22 @@ footer p {
     .requirements-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+    
+    .construction-section {
+        padding: 3rem 1rem;
+    }
+    
+    .construction-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .data-management-section {
+        padding: 3rem 1rem;
+    }
+    
+    .data-management-content h2 {
+        font-size: 1.8rem;
     }
     
     .team-section {
@@ -504,6 +662,14 @@ footer p {
     
     .requirements-grid {
         gap: 1.5rem;
+    }
+    
+    .construction-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .data-management-content h2 {
+        font-size: 1.6rem;
     }
     
     .content-block h2 {
