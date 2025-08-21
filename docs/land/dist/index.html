@@ -36,7 +36,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   <script type="module" crossorigin src="./assets/index-CA4Jb7I4.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-BV99bCjj.css">
-  <link rel="stylesheet" crossorigin href="./assets/navbar.css">
+    <link rel="stylesheet" crossorigin href="./assets/navbar.css">
+    <link rel="stylesheet" crossorigin href="./assets/interactive-section.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="scroll-smooth">
     <div id="topo" class="scroll-mt-20"></div>
@@ -99,51 +103,102 @@
         </nav>
     </header>
 
-    <!-- Start block -->
-    <section class="bg-white dark:bg-gray-900">
-        <div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
-            <div class="mr-auto place-self-center lg:col-span-7">
-                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">GovHub</h1>
-                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Plataforma livre de integração e qualificação de dados e informações governamentais</a>.</p>
-                <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-                    <a href="../../contributing/guia-contribuicao/" 
-                        class="bg-[#7E3AF2] hover:bg-[#5E2DBD] text-white inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center border border-gray-200 rounded-lg sm:w-auto focus:ring-4 focus:ring-[#C4B5FD] dark:text-white dark:border-gray-700 dark:hover:bg-[#4C249F] dark:focus:ring-gray-800">
-                        Fale conosco
-                    </a>
-                    <a href="https://github.com/GovHub-br" 
-                        class="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-[#F3F4F6] hover:text-[#1E40AF] focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-200 dark:border-gray-600 dark:hover:text-white dark:hover:bg-[#374151]">
-                        Acesse o projeto
-                    </a>
+
+
+    <!-- Start block - Seção Interativa com Glass Effect -->
+    <section class="interactive-section">
+        <!-- Background com gradiente e blur -->
+        <div class="interactive-bg"></div>
+        
+        <!-- Área da imagem (lado esquerdo) -->
+        <div class="image-area">
+            <!-- Imagem padrão -->
+            <div id="image-1" class="image-container image-fade-in">
+                <img src="./images/exemplo.png" alt="Exemplo " class="main-image">
+            </div>
+            
+            <!-- Outras imagens -->
+            <div id="image-2" class="image-container image-fade-out">
+                <img src="./images/exemploroxo.png" alt="Exemplo Roxo" class="main-image">
+            </div>
+            
+            <div id="image-3" class="image-container image-fade-out">
+                <img src="./images/exemplopreto.png" alt="Exemplo Preto" class="main-image">
+            </div>
+            
+            <div id="image-4" class="image-container image-fade-out">
+                <img src="./images/exemplovermelho.png" alt="Exemplo Vermelho" class="main-image">
+            </div>
+            
+            <div id="image-5" class="image-container image-fade-out">
+                <img src="./images/exemploazul.png" alt="Exemplo Azul" class="main-image">
                 </div>
             </div>
-            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <img src="./images/hero.png" alt="hero image">
+        
+        <!-- Container glass com itens (lado direito) -->
+        <div class="glass-container">
+            <h2 class="glass-title">Sistemas diferentes,<br>uma só leitura</h2>
+            
+            <div class="features-list">
+                <!-- Item 1 -->
+                <div class="feature-item" 
+                     onmouseenter="showImage(1)" 
+                     onmouseleave="showImage(1)">
+                    <div class="feature-content">
+                        <div class="feature-text">
+                            <p class="feature-description">Start With what you need, customize as you go.</p>
+                        </div>
             </div>                
         </div>
-    </section>
-    <!-- End block -->
-    <!-- Start block -->
-    <section class="bg-white dark:bg-gray-900">
-  <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-16">
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-y-8 gap-x-12 text-gray-500 dark:text-gray-400 place-items-center">
-
-      <a href="https://www.linkedin.com/company/lappis-rocks/posts/?feedView=all" class="flex justify-center items-center">
-        <img src="./images/lablivre.png" alt="Lab Livre Logo" class="h-auto max-h-[102px] w-auto max-w-[194px] hover:opacity-90 transition" />
-      </a>
-
-      <a href="https://www.unb.br/" class="flex justify-center items-center">
-        <img src="./images/unb.png" alt="UnB Logo" class="h-auto max-h-[59px] w-auto max-w-[232px] hover:opacity-90 transition" />
-      </a>
-
-      <a href="https://www.ipea.gov.br/portal/" class="flex justify-center items-center">
-        <img src="./images/ipea.png" alt="Ipea Logo" class="h-auto max-h-[88px] w-auto max-w-[250px] hover:opacity-90 transition" />
-      </a>
-
+                
+                <!-- Item 2 -->
+                <div class="feature-item" 
+                     onmouseenter="showImage(2)" 
+                     onmouseleave="showImage(1)">
+                    <div class="feature-content">
+                        <div class="feature-text">
+                            <p class="feature-description">Start With what you need, customize as you go.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="feature-item" 
+                     onmouseenter="showImage(3)" 
+                     onmouseleave="showImage(1)">
+                    <div class="feature-content">
+                        <div class="feature-text">
+                            <p class="feature-description">Start With what you need, customize as you go.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item 4 -->
+                <div class="feature-item" 
+                     onmouseenter="showImage(4)" 
+                     onmouseleave="showImage(1)">
+                    <div class="feature-content">
+                        <div class="feature-text">
+                            <p class="feature-description">Start With what you need, customize as you go.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item 5 -->
+                <div class="feature-item" 
+                     onmouseenter="showImage(5)" 
+                     onmouseleave="showImage(1)">
+                    <div class="feature-content">
+                        <div class="feature-text">
+                            <p class="feature-description">Start With what you need, customize as you go.</p>
+                        </div>
+                    </div>
+                </div>
     </div>
   </div>
 </section>
+    <!-- End block - Seção Interativa com Glass Effect -->
 
-    <!-- End block -->
     <!-- Start block -->
     <section class="bg-gray-50 dark:bg-gray-800">
         <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
@@ -423,6 +478,290 @@
         });
     </script>
     
-    <!-- Stylesheet - CSS Customizado -->
+    <!-- JavaScript para seção interativa -->
+    <script>
+        function showImage(imageNumber) {
+            // Esconde todas as imagens
+            for (let i = 1; i <= 5; i++) {
+                const img = document.getElementById(`image-${i}`);
+                if (i === imageNumber) {
+                    img.classList.remove('image-fade-out');
+                    img.classList.add('image-fade-in');
+                } else {
+                    img.classList.remove('image-fade-in');
+                    img.classList.add('image-fade-out');
+                }
+            }
+        }
+    </script>
+    
+         <!-- Stylesheet - CSS Customizado -->
+     <style>
+         /* Outros estilos customizados podem ser adicionados aqui */
+     </style>
 </body>
 </html>
+
+                <div>
+
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">PROJETO</h3>
+
+                    <ul class="text-gray-500 dark:text-gray-400">
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class=" hover:underline">Sobre o GovHub</a>
+
+                        </li>
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class="hover:underline">Equipe Lab Livre</a>
+
+                        </li>
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class="hover:underline">História do Projeto</a>
+
+                        </li>
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class="hover:underline">Blog</a>
+
+                        </li>
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class="hover:underline">Parceiros</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">AJUDA E SUPORTE</h3>
+
+                    <ul class="text-gray-500 dark:text-gray-400">
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class="hover:underline">Fale Conosco</a>
+
+                        </li>
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class="hover:underline">Central de Ajuda</a>
+
+                        </li>
+
+                        <li class="mb-4">
+
+                         <a href="../../home/" class="hover:underline">Documentação Técnica</a>
+
+                        </li>
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class="hover:underline">Suporte à Comunidade</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">APRENDIZADO</h3>
+
+                    <ul class="text-gray-500 dark:text-gray-400">
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class="hover:underline">Guias de Uso</a>
+
+                        </li>
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class="hover:underline">Tutoriais</a>
+
+                        </li>
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class="hover:underline">Comunidade</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">RECURSOS</h3>
+
+                    <ul class="text-gray-500 dark:text-gray-400">
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class=" hover:underline">Repositório no GitHub</a>
+
+                        </li>
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class="hover:underline">Modelos de Dashboards</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">LEGAL</h3>
+
+                    <ul class="text-gray-500 dark:text-gray-400">
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class="hover:underline">Política de Privacidade</a>
+
+                        </li>
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class="hover:underline">Licença de Software Livre</a>
+
+                        </li>
+
+                        <li class="mb-4">
+
+                            <a href="../../home/" class="hover:underline">Termos de Uso</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+
+            <div class="text-center">
+
+                <a href="#topo" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">
+
+                    <img src="./images/logo.png" class="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
+
+                    GovHub    
+
+                </a>
+
+                <span class="block text-sm text-center text-gray-500 dark:text-gray-400">Plataforma livre mantida pelo Lab Livre/UnB</a>.
+
+                </span>
+
+                <ul class="flex justify-center mt-5 space-x-5">
+
+                    <!-- Instagram -->
+
+                    <li>
+
+                        <a href="https://www.instagram.com/lab.livre/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+
+                                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8 2.25a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"/>
+
+                            </svg>
+
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- GitHub -->
+
+                    <li>
+
+                        <a href="https://github.com/GovHub-br" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+
+                            </svg>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+
+    
+    <!-- JavaScript para menu mobile -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+            });
+            
+            // Fechar menu ao clicar em um link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        });
+    </script>
+    
+    <!-- JavaScript para seção interativa -->
+    <script>
+        function showImage(imageNumber) {
+            // Esconde todas as imagens
+            for (let i = 1; i <= 5; i++) {
+                const img = document.getElementById(`image-${i}`);
+                if (i === imageNumber) {
+                    img.classList.remove('image-fade-out');
+                    img.classList.add('image-fade-in');
+                } else {
+                    img.classList.remove('image-fade-in');
+                    img.classList.add('image-fade-out');
+                }
+            }
+        }
+    </script>
+    
+         <!-- Stylesheet - CSS Customizado -->
+     <style>
+         /* Outros estilos customizados podem ser adicionados aqui */
+     </style>
+</body>
+
+</html>
+
+
