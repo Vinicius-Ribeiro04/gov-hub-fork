@@ -17,16 +17,40 @@ function moveCarousel(direction) {
 // Função para mostrar imagens na seção interativa
 function showImage(imageNumber) {
     // Esconde todas as imagens
-    for (let i = 1; i <= 5; i++) {
-        const img = document.getElementById(`image-${i}`);
-        if (i === imageNumber) {
+    const images = document.querySelectorAll('.image-container');
+    
+    images.forEach((img, index) => {
+        if (index + 1 === imageNumber) {
             img.classList.remove('image-fade-out');
             img.classList.add('image-fade-in');
         } else {
             img.classList.remove('image-fade-in');
             img.classList.add('image-fade-out');
         }
-    }
+    });
+}
+
+// Função para resetar para a primeira imagem quando não há hover
+function resetToFirstImage() {
+    showImage(1);
+}
+
+// Função para inicializar eventos touch para mobile
+function initTouchEvents() {
+    const featureItems = document.querySelectorAll('.feature-item');
+    
+    featureItems.forEach((item, index) => {
+        const imageNumber = index + 1;
+        
+        // Touch start - mostrar imagem
+        item.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            showImage(imageNumber);
+        });
+        
+        // Remover o touchend que fazia o reset automático
+        // Agora a imagem permanece selecionada
+    });
 }
 
 // Função para menu mobile
@@ -161,6 +185,7 @@ function initApp() {
         initNavbarScroll();
         initScrollAnimations();
         preloadImages();
+        initTouchEvents(); // Adicionar chamada para initTouchEvents
         
         console.log('GovHub - Aplicação inicializada com sucesso! 🚀');
     });

@@ -38,10 +38,10 @@ header.fixed {
 
 .image-area {
     position: absolute;
-    bottom: 0;
+    bottom: -5%;
     left: 12%;
     width: 45%;
-    height: 90%;
+    height: 120%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -54,6 +54,7 @@ header.fixed {
     top: 0;
     right: 0;
     left: 0;
+    bottom: 0;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -66,6 +67,7 @@ header.fixed {
     height: 80%;
     max-height: 100%;
     object-fit: cover;
+    object-position: top center;
     border-radius: 1rem;
     box-shadow: none;
     background: transparent;
@@ -202,26 +204,44 @@ header.fixed {
     
     .interactive-container {
         padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
     }
     
     .image-area {
         position: relative;
         left: auto;
         width: 100%;
-        height: 300px;
+        height: 350px;
         margin-bottom: 2rem;
         order: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .image-container {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .main-image {
         width: auto;
         height: 100%;
         max-width: 80%;
+        object-fit: contain;
+        object-position: top center;
+        border-radius: 1rem;
     }
     
     .glass-container {
@@ -232,18 +252,21 @@ header.fixed {
         max-width: 100%;
         margin: 0 auto;
         order: 2;
+        padding: 1.5rem 1rem 3rem 1rem;
     }
     
     .glass-title {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
     }
     
     .feature-item {
-        padding: 0.6rem;
+        padding: 0.8rem;
+        margin-bottom: 0.5rem;
     }
     
     .feature-description {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
     }
 }
 
@@ -256,32 +279,51 @@ header.fixed {
     
     .interactive-container {
         padding: 0 0.5rem;
+        gap: 1.5rem;
     }
     
     .image-area {
-        height: 250px;
+        height: 300px;
         margin-bottom: 1.5rem;
+    }
+    
+    .image-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .main-image {
         max-width: 90%;
+        height: 95%;
+        object-fit: contain;
+        object-position: top center;
+        border-radius: 1rem;
     }
     
     .glass-container {
-        padding: 0.75rem 1rem 2rem 1rem;
+        padding: 1rem 0.75rem 2.5rem 0.75rem;
     }
     
     .glass-title {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
     }
     
     .feature-item {
-        padding: 0.5rem;
-        margin-bottom: 0.3rem;
+        padding: 0.7rem;
+        margin-bottom: 0.4rem;
     }
     
     .feature-description {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -292,25 +334,51 @@ header.fixed {
         margin-top: 60px;
     }
     
+    .interactive-container {
+        gap: 1rem;
+    }
+    
     .image-area {
-        height: 200px;
+        height: 250px;
         margin-bottom: 1rem;
     }
     
+    .image-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main-image {
+        max-width: 95%;
+        height: 90%;
+        object-fit: contain;
+        object-position: top center;
+        border-radius: 1rem;
+    }
+    
     .glass-container {
-        padding: 0.5rem 0.75rem 1.5rem 0.75rem;
+        padding: 0.75rem 0.5rem 2rem 0.5rem;
     }
     
     .glass-title {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 0.6rem;
     }
     
     .feature-item {
-        padding: 0.4rem;
-        margin-bottom: 0.2rem;
+        padding: 0.6rem;
+        margin-bottom: 0.3rem;
     }
     
     .feature-description {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
     }
 }
