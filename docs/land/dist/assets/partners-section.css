@@ -89,3 +89,22 @@
     }
 }
 
+@media (max-width: 480px) {
+    .partners-section {
+        padding: 1.5rem 0;
+    }
+    
+    .partners-title {
+        font-size: 1.5rem;
+    }
+    
+    .partners-logos {
+        gap: 1.5rem;
+    }
+    
+    .partner-logo {
+        max-height: 60px;
+        max-width: 150px;
+    }
+}
+

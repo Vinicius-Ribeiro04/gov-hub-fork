@@ -171,4 +171,87 @@
     }
 }
 
+@media (max-width: 1023px) {
+    .govhub-section {
+        padding: 4rem 0;
+    }
+    
+    .govhub-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .govhub-image-container {
+        order: -1;
+    }
+    
+    .govhub-title {
+        font-size: 1.75rem;
+    }
+    
+    .govhub-description {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .govhub-section {
+        padding: 3rem 1rem;
+    }
+    
+    .govhub-container {
+        padding: 0 1rem;
+    }
+    
+    .govhub-title {
+        font-size: 1.5rem;
+    }
+    
+    .govhub-description {
+        font-size: 1rem;
+    }
+    
+    .govhub-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .govhub-subdescription {
+        font-size: 1rem;
+    }
+    
+    .govhub-feature-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .govhub-section {
+        padding: 2rem 0.5rem;
+    }
+    
+    .govhub-container {
+        padding: 0 0.5rem;
+    }
+    
+    .govhub-title {
+        font-size: 1.25rem;
+    }
+    
+    .govhub-description {
+        font-size: 0.9rem;
+    }
+    
+    .govhub-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    .govhub-subdescription {
+        font-size: 0.9rem;
+    }
+    
+    .govhub-feature-text {
+        font-size: 0.8rem;
+    }
+}
+
 

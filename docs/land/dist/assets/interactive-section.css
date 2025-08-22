@@ -8,7 +8,7 @@
     overflow: hidden;
     background: url('../images/section-bg.png') center center/cover no-repeat;
     padding: 4rem 0;
-    margin-top: 0;
+    margin-top: 60px; /* Espaçamento para a navbar fixa */
     z-index: 1;
 }
 
@@ -158,4 +158,159 @@ header.fixed {
     text-align: center;
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .interactive-section {
+        padding: 4rem 2rem;
+        min-height: 80vh;
+        margin-top: 60px;
+    }
+    
+    .image-area {
+        left: 8%;
+        width: 40%;
+    }
+    
+    .glass-container {
+        min-width: 400px;
+        max-width: 500px;
+        top: 12rem;
+        right: 8%;
+        padding: 1rem 1.5rem 3rem 1.5rem;
+    }
+    
+    .glass-title {
+        font-size: 1.3rem;
+    }
+    
+    .feature-description {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .interactive-section {
+        padding: 3rem 1rem;
+        min-height: 70vh;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+    .interactive-container {
+        padding: 0 1rem;
+    }
+    
+    .image-area {
+        position: relative;
+        left: auto;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 2rem;
+        order: 1;
+    }
+    
+    .image-container {
+        position: relative;
+        height: 100%;
+    }
+    
+    .main-image {
+        width: auto;
+        height: 100%;
+        max-width: 80%;
+    }
+    
+    .glass-container {
+        position: relative;
+        top: auto;
+        right: auto;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        order: 2;
+    }
+    
+    .glass-title {
+        font-size: 1.2rem;
+    }
+    
+    .feature-item {
+        padding: 0.6rem;
+    }
+    
+    .feature-description {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .interactive-section {
+        padding: 2rem 0.5rem;
+        min-height: 60vh;
+        margin-top: 60px;
+    }
+    
+    .interactive-container {
+        padding: 0 0.5rem;
+    }
+    
+    .image-area {
+        height: 250px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .main-image {
+        max-width: 90%;
+    }
+    
+    .glass-container {
+        padding: 0.75rem 1rem 2rem 1rem;
+    }
+    
+    .glass-title {
+        font-size: 1.1rem;
+    }
+    
+    .feature-item {
+        padding: 0.5rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .feature-description {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .interactive-section {
+        padding: 1.5rem 0.25rem;
+        min-height: 50vh;
+        margin-top: 60px;
+    }
+    
+    .image-area {
+        height: 200px;
+        margin-bottom: 1rem;
+    }
+    
+    .glass-container {
+        padding: 0.5rem 0.75rem 1.5rem 0.75rem;
+    }
+    
+    .glass-title {
+        font-size: 1rem;
+    }
+    
+    .feature-item {
+        padding: 0.4rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .feature-description {
+        font-size: 0.65rem;
+    }
 }

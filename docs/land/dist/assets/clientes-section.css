@@ -199,3 +199,44 @@
         max-width: 280px;
     }
 }
+
+@media (max-width: 480px) {
+    .clients-section {
+        padding: 1.5rem 0;
+    }
+    
+    .clients-title {
+        font-size: 1.5rem;
+    }
+    
+    .clients-carousel {
+        gap: 0.5rem;
+    }
+    
+    .carousel-arrow {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .carousel-arrow svg {
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    .client-card {
+        min-width: 250px;
+        max-width: 250px;
+    }
+    
+    .client-name {
+        font-size: 0.9rem;
+    }
+    
+    .client-quote {
+        font-size: 0.8rem;
+    }
+    
+    .client-role {
+        font-size: 0.7rem;
+    }
+}

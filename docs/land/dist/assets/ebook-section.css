@@ -160,3 +160,31 @@
         font-size: 0.875rem;
     }
 }
+
+@media (max-width: 480px) {
+    .ebook-section {
+        padding: 1.5rem 0;
+    }
+    
+    .ebook-title {
+        font-size: 1.5rem;
+    }
+    
+    .ebook-description {
+        font-size: 0.9rem;
+    }
+    
+    .ebook-book-left {
+        width: 150px;
+    }
+    
+    .ebook-book-right {
+        width: 150px;
+        transform: rotate(-5deg) translateX(-15px) translateY(-5px);
+    }
+    
+    .ebook-button {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.8rem;
+    }
+}
